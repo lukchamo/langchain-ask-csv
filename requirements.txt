@@ -1,7 +1,7 @@
 aim==3.17.4
 aiodns==3.0.0
 aleph_alpha_client==3.1.0
-apify_client==1.1.1
+apify_client==1.5.0
 arize==7.0.1
 asynctest==0.13.0
 atlassian==0.0.0
