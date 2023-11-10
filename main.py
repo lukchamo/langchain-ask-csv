@@ -1,4 +1,4 @@
-from langchain_experimental.agents import create_csv_agent
+from langchain_experimental.agents.agent_toolkits.csv.base import create_csv_agent
 from langchain.llms import OpenAI
 from dotenv import load_dotenv
 import os
