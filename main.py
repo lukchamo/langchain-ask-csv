@@ -1,15 +1,12 @@
 from langchain_experimental.agents.agent_toolkits.csv.base import create_csv_agent
 from langchain.llms import OpenAI
-from dotenv import load_dotenv
 import os
 import streamlit as st
 
 
 def main():
-    load_dotenv()
-
     # Load the OpenAI API key from the environment variable
-    if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
+    if os.environ.get("OPENAI_API_KEY") is None or os.environ.get("OPENAI_API_KEY") == "":
         print("OPENAI_API_KEY is not set")
         exit(1)
     else:
